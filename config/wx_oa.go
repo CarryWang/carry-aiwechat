@@ -49,7 +49,7 @@ func GetWxSubscribeReply() string {
 func GetWxHelpReply() string {
 	helpMsg := os.Getenv(Wx_Help_Reply_key)
 	if helpMsg == "" {
-		helpMsg = "是Carry的gemini机器人，开始聊天吧！"
+		helpMsg = "Hello,我是Carry的gemini机器人，开始聊天吧！"
 	}
 	return strings.ReplaceAll(helpMsg, "\\n", "\n")
 }
